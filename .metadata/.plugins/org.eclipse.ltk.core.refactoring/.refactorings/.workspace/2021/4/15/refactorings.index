@@ -1,0 +1,6 @@
+1617869130060	Delete resource 'vending_machine
+					Scanner n = new Scanner(System.in);
+					menu = n.nextInt();'
+1617869213941	Rename Java project 'vending_machine
+					Scanner n = new Scanner(System.in);
+					menu = n.nextInt();'

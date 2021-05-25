@@ -1,0 +1,19 @@
+public class Ex03_16 {
+	public static void main(String[] args) {
+		byte bt = 10;
+		short st = 20;
+		int it = 30;
+		long ln = 40L;
+		float flt = 3.14f;
+		double dbl = 3.14;
+		String str1 = "10", str2 = "20";
+
+		ln = it = st = bt;
+		System.out.printf("%d \n", ln);
+
+		dbl = flt;
+		System.out.printf("%f \n", dbl);
+
+		System.out.printf("%d \n", Integer.parseInt(str1) + Integer.parseInt(str2));
+	}
+}
