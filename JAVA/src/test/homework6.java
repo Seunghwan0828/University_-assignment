@@ -2,7 +2,7 @@ package test;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class homework_6 {
+public class homework6 {
 
 	public static void main(String[] args) {
 		System.out.print("10진수 4자리를 입력해 주세요.: ");

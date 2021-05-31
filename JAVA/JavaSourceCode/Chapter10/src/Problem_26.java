@@ -7,13 +7,13 @@ public class Problem_26 {
 		int a, b, result = 0;
 		char ch;
 
-		System.out.printf("Ã¹¹øÂ° ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.printf("ì²«ë²ˆì§¸ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		a = s.nextInt();
 
-		System.out.printf("°è»êÇÒ ¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.printf("ê³„ì‚°í•  ì—°ì‚°ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		ch = s.next().charAt(0);
 
-		System.out.printf("µÎ¹øÂ° ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.printf("ë‘ë²ˆì§¸ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		b = s.nextInt();
 
 		try {
@@ -22,21 +22,21 @@ public class Problem_26 {
 			case '-':	result = a - b;		break;
 			case '*':
 						if (a == 0 || b == 0)
-							throw new Exception("0À¸·Î °öÇÏ¸é ¾îÂ÷ÇÇ 0ÀÔ´Ï´Ù.");
+							throw new Exception("0ìœ¼ë¡œ ê³±í•˜ë©´ ì–´ì°¨í”¼ 0ì…ë‹ˆë‹¤.");
 						result = a * b;		break;
 			case '/':
 						if (b == 0)
-							throw new Exception("0À¸·Î ³ª´©¸é ¾ÈµË´Ï´Ù.");
+							throw new Exception("0ìœ¼ë¡œ ë‚˜ëˆ„ë©´ ì•ˆë©ë‹ˆë‹¤.");
 						result = a / b;		break;
 			}
 			
 			if (result < 0)
-				throw new Exception("°á°ú°¡ À½¼ö³×¿ä. ¤Ğ¤Ğ");
+				throw new Exception("ê²°ê³¼ê°€ ìŒìˆ˜ë„¤ìš”. ã… ã… ");
 			
-			System.out.printf("°á°ú °ª==> %d", result);
+			System.out.printf("ê²°ê³¼ ê°’==> %d", result);
 			
 		} catch (Exception e) {
-			System.out.print("¹ß»ı ¿À·ù ==> ");
+			System.out.print("ë°œìƒ ì˜¤ë¥˜  ==> ");
 			System.out.println(e.getMessage());
 		} 
 		
